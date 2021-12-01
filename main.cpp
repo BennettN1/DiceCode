@@ -22,10 +22,10 @@ int main()
 {
     int numberofsides;
     int numberofdice;
-    cout << "How many sides do you want the dice to have?" << endl ;
-    cin >> numberofsides ;
-    cout << "How many dices do you want to roll?" << endl ;
+    cout << "How many sides do you want the dice to have?" << endl;
+    cin >> numberofsides;
+    cout << "How many dices do you want to roll?" << endl;
     cin >> numberofdice;
-    dice roll (numberofsides , numberofdice) ;
+    dice roll (numberofsides , numberofdice);
     return 0;
 }
