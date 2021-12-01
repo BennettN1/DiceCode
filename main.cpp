@@ -9,13 +9,13 @@ class dice
     int numberofdices;
     dice (int numberofsides ,int numberofdices)
     {
-            int rolls [ numberofdices ] ;
+            int rolls [numberofdices] ;
             
             for ( int x = 0 ; x < numberofdices ; x++)
             {
                 srand(time(NULL));
                 int roll = rand ( ) % numberofsides+1;
-                rolls [ x ] = roll ;
+                rolls [x] = roll ;
                 cout << roll << endl;
             }
         }
