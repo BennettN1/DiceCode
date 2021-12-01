@@ -10,7 +10,6 @@ class dice
     dice (int numberofsides ,int numberofdices)
     {
             int rolls [numberofdices];
-            
             for ( int x = 0 ; x < numberofdices ; x++)
             {
                 int roll = rand() % numberofsides + 1;
@@ -30,4 +29,3 @@ int main()
     dice roll (numberofsides , numberofdice) ;
     return 0;
 }
-
