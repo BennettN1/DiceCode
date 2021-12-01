@@ -1,37 +1,34 @@
 
-
-
 #include <iostream>
 using namespace std;
 
 class dice
 {
-    public :
-    int sides ;
-    int dices ;
-    dice ( int sides1 , int dices1 )
+    public:
+    int numberofsides;
+    int numberofdices;
+    dice (int numberofsides ,int numberofdices)
     {
-            sides = sides1 ;
-            dices = dices1 ;
-            int rolls [ dices ] ;
+            int rolls [ numberofdices ] ;
             
-            for ( int x = 0 ; x < dices ; x++ )
+            for ( int x = 0 ; x < numberofdices ; x++)
             {
-                srand(time(NULL)) ;
-                int roll = rand ( ) %sides+1 ;
+                srand(time(NULL));
+                int roll = rand ( ) % numberofsides+1;
                 rolls [ x ] = roll ;
+                cout << roll << endl;
             }
         }
 };
 int main()
 {
-    int numberofsides ;
-    int numberofdice ;
+    int numberofsides;
+    int numberofdice;
     cout << "How many sides do you want the dice to have?" << endl ;
     cin >> numberofsides ;
     cout << "How many dices do you want to roll?" << endl ;
-    cin >> numberofdice ;
-    dice gameOne ( x , y ) ;
+    cin >> numberofdice;
+    dice roll (numberofsides , numberofdice) ;
     return 0;
 }
 
