@@ -15,7 +15,7 @@ class dice
             {
                 int roll = rand() % numberofsides + 1;
                 rolls [x] = roll;
-                cout << roll << endl;
+                cout << endl << "The dice roll was:" << roll << endl;
             }
         }
 };
